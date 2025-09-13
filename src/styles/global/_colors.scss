@@ -1,0 +1,8 @@
+:root {
+  /* Tema oscuro con mejor contraste global */
+  --color-bg: hsl(0, 0%, 60%);        /* fondo oscuro */
+  --color-header-bg: hsl(240, 19%, 7%); /* mantiene encabezado oscuro */
+  --color-text: hsl(0, 0%, 96%);         /* texto claro legible sobre fondo oscuro */
+  --color-accent: hsl(296, 99%, 42%);
+  --color-highlight: hsl(296, 99%, 30%);
+}

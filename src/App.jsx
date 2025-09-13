@@ -1,4 +1,4 @@
-//import styles sccs
+//import styles SASS
 import "./styles/styles.scss"
 
 //import components

@@ -1,0 +1,11 @@
+.rounded {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+em {
+  font-style: normal;
+  background: var(--color-highlight);
+  padding-inline: 0.15em;
+  border-radius: var(--radius-sm);
+}

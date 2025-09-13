@@ -1,12 +1,11 @@
-//import styles
-
 export const Navbar = () => {
-  return (
-    <div className="navbar_container">
-        Navbar
-    </div>
-  )
+ return (
+   <nav className="wrapper has-padding">
+     <div className="navbar">
+       Navbar oli
+     </div>
+   </nav>
+ )
 }
-
 
 export default Navbar;

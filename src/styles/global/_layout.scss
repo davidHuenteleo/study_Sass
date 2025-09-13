@@ -1,0 +1,18 @@
+@use '../utils' as u;
+
+.wrapper {
+  width: min(100% - var(--space-7), var(--container-max));
+  margin-inline: auto;
+
+  border: solid rgb(50, 164, 73) 1px;
+
+  &.has-padding {
+    padding-block: var(--space-7);
+
+    @include u.breakpoint(medium) {
+      padding-block: var(--space-9);
+
+      border: solid rgb(201, 32, 216) 1px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@use '../utils' as u;
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  line-height: 1.1;
+}
+
+h1 {
+  @include u.fs-fluid(u.rem(375), u.rem(1200), u.rem(36), u.rem(48));
+}
+
+h2 {
+  @include u.fs-fluid(u.rem(375), u.rem(1200), u.rem(28), u.rem(36));
+}
+
+p {
+  @include u.fs-fluid(u.rem(375), u.rem(1200), u.rem(16), u.rem(18));
+  line-height: 1.5;
+
+  &.small {
+    font-size: u.rem(13);
+  }
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.15em;
+  transition: color var(--duration-1) var(--easing-standard);
+
+  &:hover {
+    color: var(--color-accent);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+}

@@ -1,0 +1,28 @@
+@use '../utils' as u;
+
+.hero {
+  /* Habilita container queries para los descendientes */
+  container-type: inline-size;
+  container-name: hero;
+
+  &__wrapper {
+    display: grid;
+    gap: var(--space-5); /* 24px por defecto (mobile-first) */
+
+
+     /* Fallback por viewport */
+     @include u.breakpoint(medium) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-8); /* 48px */
+        align-items: center;
+      }
+
+      /* Encapsulación por contenedor */
+      @container hero (min-width: #{u.em(700)}) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-8);
+        align-items: center;
+      }
+
+  }
+}

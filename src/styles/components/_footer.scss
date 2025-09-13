@@ -1,0 +1,15 @@
+@use '../utils' as u;
+
+
+.footer {
+  text-align: center;
+  padding-block: var(--space-4);
+
+  @include u.breakpoint(medium) {
+    padding-block: var(--space-5);
+  }
+
+  p {
+    margin: 0;
+  }
+}

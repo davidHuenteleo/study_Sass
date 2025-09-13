@@ -1,5 +1,12 @@
-.navbar_container {
-    background-color: red;
+.navbar {
+  background-color: var(--color-header-bg);
+  color: var(--color-text);
+  padding-block: var(--space-1);
+
+  border: solid red 1px;
+
+  margin: var(--space-4);
+  
 }
 
  
