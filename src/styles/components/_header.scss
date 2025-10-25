@@ -2,7 +2,6 @@
 
 .header {
   padding-block: var(--space-4); /* ~16px */
-  background: var(--color-header-bg);
 
   @include u.breakpoint(medium) {
     padding-block: var(--space-5); /* 24px */

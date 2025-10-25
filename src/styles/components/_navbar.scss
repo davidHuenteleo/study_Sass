@@ -1,12 +1,17 @@
+
 .navbar {
-  background-color: var(--color-header-bg);
+
   color: var(--color-text);
-  padding-block: var(--space-1);
 
-  border: solid red 1px;
+  width: 100vh;
+  height: auto;
 
-  margin: var(--space-4);
-  
+  min-height: 60px;
+  padding-block: var(--space-4);
+  padding-inline: var(--space-4);
+
+
+  margin: var(--space-2);
+  font-size: 1.2rem;
+  font-weight: bold;
 }
-
- 

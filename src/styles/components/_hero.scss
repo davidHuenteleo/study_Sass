@@ -11,7 +11,7 @@
 
 
      /* Fallback por viewport */
-     @include u.breakpoint(medium) {
+      @include u.breakpoint(medium) {
         grid-template-columns: repeat(2, 1fr);
         gap: var(--space-8); /* 48px */
         align-items: center;
